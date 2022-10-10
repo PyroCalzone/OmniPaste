@@ -95,8 +95,8 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use CTRL+~(Tilde) to switch between OmniPaste key-binds and the active program's key-binds.
-     `CTRL + ALT + Number` to copy
+Use CTRL+~(Tilde) to switch between OmniPaste key-binds and the active program's key-binds.<br/>
+     `CTRL + ALT + Number` to copy<br/>
      `CTRL + Number` to paste
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
