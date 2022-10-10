@@ -77,6 +77,10 @@ To get a local copy up and running follow these simple example steps.
   ```sh
   pip install pywin32
   ```
+* pyperclip
+  ```sh
+  pip install pyperclip
+  ```
 
 ### Installation
 
@@ -89,7 +93,8 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     git clone https://github.com/PyroCalzone/OmniPaste.git
     ```
-    2. Download the Prerequisites
+    2. Download the Prerequisites.
+    3. Modify system_hotkey to add grave keybind (0xC0) OR download [my fork](https://github.com/PyroCalzone/system_hotkey_fix).
     3. OmniPaste away!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
