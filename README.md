@@ -114,8 +114,9 @@ Use CTRL+`(Grave/Tilde) to switch between OmniPaste key-binds and the active pro
 - [x] Register Key-binds
 - [x] Key-bind Toggle
 - [ ] Copy Feature
-- [ ] Paste Feature
+- [x] Paste Feature
 - [ ] GUI to identify which key-bind holds which paste
+- [ ] Keybind switch notification
 
 
 See the [open issues](https://github.com/PyroCalzone/OmniPaste/issues) for a full list of proposed features (and known issues).
