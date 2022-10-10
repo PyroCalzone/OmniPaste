@@ -115,8 +115,8 @@ Use CTRL+~(Tilde) to switch between OmniPaste key-binds and the active program's
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Register Key-binds
-- [ ] Key-bind Toggle
+- [x] Register Key-binds
+- [x] Key-bind Toggle
 - [ ] Copy Feature
 - [ ] Paste Feature
 - [ ] GUI to identify which key-bind holds which paste
