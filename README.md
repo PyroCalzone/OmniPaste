@@ -100,7 +100,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use CTRL+~(Tilde) to switch between OmniPaste key-binds and the active program's key-binds.<br/>
+Use CTRL+`(Grave/Tilde) to switch between OmniPaste key-binds and the active program's key-binds.<br/>
      `CTRL + ALT + Number` to copy<br/>
      `CTRL + Number` to paste
 
