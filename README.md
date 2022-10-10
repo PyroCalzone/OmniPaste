@@ -77,10 +77,6 @@ To get a local copy up and running follow these simple example steps.
   ```sh
   pip install pywin32
   ```
-* keyboard
-  ```sh
-  pip install keyboard
-  ```
 
 ### Installation
 
