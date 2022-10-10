@@ -73,6 +73,10 @@ To get a local copy up and running follow these simple example steps.
   ```sh
   pip install system_hotkey
   ```
+* pywin32
+  ```sh
+  pip install pywin32
+  ```
 
 ### Installation
 
