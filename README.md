@@ -77,6 +77,14 @@ To get a local copy up and running follow these simple example steps.
   ```sh
   pip install pywin32
   ```
+* keyboard
+  ```sh
+  pip install keyboard
+  ```
+* pyperclip
+  ```sh
+  pip install pyperclip
+  ```
 
 ### Installation
 
@@ -113,7 +121,7 @@ Use CTRL+`(Grave/Tilde) to switch between OmniPaste key-binds and the active pro
 
 - [x] Register Key-binds
 - [x] Key-bind Toggle
-- [ ] Copy Feature
+- [x] Copy Feature
 - [x] Paste Feature
 - [ ] GUI to identify which key-bind holds which paste
 - [ ] Keybind switch notification
