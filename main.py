@@ -38,10 +38,12 @@ def copy(group): # Clipboard to send the text to
 
 
 def paste(text): #Paste text, or have the keyboard write it out.
-    #TODO: Do text manipulation so new lines doesn't send the text.
-    print(text)
+    splitText = text.splitlines() #Split the text up by newline characters
     keyboard.release("control") #Release control button so we don't accidentally activate other hotkeys
-    keyboard.write(text)
+    for index, line in enumerate(splitText, start = 1): #For every newline in text
+        keyboard.write(line) #Write the line out
+        if index != len(splitText): #If the line isn't the last line
+            keyboard.press_and_release("shift+enter") #Add a soft line break (Won't send messages on messaging platforms)
     keyboard.press("control") #Press the control button so you can spam paste if you want.
 
 def registerHotkeys(hotKey): #Register Hotkeys for togglable functionality.
