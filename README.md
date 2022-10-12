@@ -123,6 +123,7 @@ Use CTRL+\`(Grave/Tilde) to switch between OmniPaste key-binds and the active pr
 - [x] Key-bind Toggle
 - [x] Copy Feature
 - [x] Paste Feature
+- [ ] Copied Text Manipulation (Prevent newlines from sending messages on messengers)
 - [ ] GUI to identify which key-bind holds which paste
 - [ ] Keybind switch notification
 
