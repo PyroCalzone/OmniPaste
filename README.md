@@ -21,10 +21,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<!--  <a href="https://github.com/PyroCalzone/OmniPaste">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/PyroCalzone/OmniPaste">
+    <img src="assets/logo.png" alt="Logo" width="80" height="80">
   </a>
-  -->
+ 
 
 <h3 align="center">OmniPaste</h3>
 
