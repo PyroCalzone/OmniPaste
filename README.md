@@ -22,7 +22,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/PyroCalzone/OmniPaste">
-    <img src="assets/logo.png" alt="Logo" width="120" height="120">
+    <img src="assets/icon.png" alt="Logo" width="120" height="120">
   </a>
  
 
