@@ -157,7 +157,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Pyro - [Discord Server](https://discord.gg/udf9HJpGKP) - pyrocalzoneemail@gmail.com
+Pyro - [Discord Server](https://discord.gg/Uca97Tf3tp) - pyrocalzoneemail@gmail.com
 
 Project Link: [https://github.com/PyroCalzone/OmniPaste](https://github.com/PyroCalzone/OmniPaste)
 
