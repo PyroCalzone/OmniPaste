@@ -2,3 +2,5 @@ keyboard==0.13.5
 pyperclip==1.8.2
 pywin32==304
 system-hotkey==1.0.3
+pystray==0.19.4
+Pillow==9.2.0
