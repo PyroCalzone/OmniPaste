@@ -2,12 +2,13 @@ from system_hotkey import SystemHotkey
 import keyboard
 import pyperclip
 from time import sleep
-from sysIcon import SysTrayIcon
+import pystray
 from os import path
+from PIL import Image
 hk = SystemHotkey()
 icon = path.abspath(path.join(path.dirname(__file__), 'assets/icon.ico'))
 hover_text = "OmniPaste"
-
+notified = False
 registered = False
 
 clipboards = {
@@ -39,7 +40,6 @@ def copy(group): # Clipboard to send the text to
     newClipboard = pyperclip.paste() #Save our new clipboard, this should be our selected text.
     clipboards[group] = newClipboard #Set the group's clipboard to our selected text
     pyperclip.copy(originalClipboard) #Restore clipboard
-
 
 def paste(text): #Paste text, or have the keyboard write it out.
     splitText = text.splitlines() #Split the text up by newline characters
@@ -99,21 +99,59 @@ def registerToggle(): #Toggle hotkeys
     if registered:
         unregisterHotkeys(hk)
         registered = False
+        if notifyCompat and notified: tray.notify("OmniPaste binds disabled")
     else:
         registerHotkeys(hk)
         registered = True
+        if notifyCompat and notified: tray.notify("OmniPaste binds enabled")
 
-#TODO: add notification that you've switched key-binds
-#TODO: add GUI for identifying which binds holds which pastes 
+def notifyToggle(): #Toggle Notifications
+    global notified
+    if notified:
+        notified = False
+    else:
+        notified = True
+
+#System Tray Setup
+menu = pystray.Menu(
+            pystray.MenuItem(
+                'Notifications',
+                notifyToggle,
+                checked=lambda x: notified,
+            ),
+            
+            pystray.MenuItem(
+                'Binds',
+                registerToggle,
+                checked=lambda x: registered,
+            ),
+
+            pystray.MenuItem(
+                'Quit',
+                lambda : prepQuit(),
+            ),
+        )
+
+tray = pystray.Icon(
+    'OmniPaste',
+    title="OmniPaste",
+    icon=Image.open(icon),
+    menu=menu
+    )
+
+notifyCompat = tray.HAS_NOTIFICATION #MacOS doesn't support notifications
 
 def prepQuit():
+    global registered
     #Ensuring hotkeys are unregistered before exiting, not sure if required. 
     if registered:
-        unregisterHotkeys(hk)
-        registered = False
+        registerToggle
+    #Turn off tray so we can exit.
+    tray.visible = False
+    tray.stop()
 
 if __name__ == '__main__':
-    def leave():
-        quit()
-    hk.register(('control', 'grave'), callback=lambda x: registerToggle()) #
-    SysTrayIcon(icon, hover_text, (), default_menu_index=1)
+    hk.register(('control', 'grave'), callback=lambda x: registerToggle())
+    tray.run() #This holds the program up, won't quit automatically
+
+#TODO: add GUI for identifying which binds holds which pastes 
