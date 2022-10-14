@@ -78,6 +78,14 @@
   ```sh
   pip install pyperclip
   ```
+* pystray
+  ```sh
+  pip install pystray
+  ```
+* Pillow
+  ```sh
+  pip install Pillow
+  ```
 
 ### Installation
 
@@ -118,7 +126,7 @@ Use CTRL+\`(Grave/Tilde) to switch between OmniPaste key-binds and the active pr
 - [x] Paste Feature
 - [x] Copied Text Manipulation (Prevent newlines from sending messages on messengers)
 - [ ] GUI to identify which key-bind holds which paste
-- [ ] Keybind switch notification
+- [x] Keybind switch notification
 
 
 See the [open issues](https://github.com/PyroCalzone/OmniPaste/issues) for a full list of proposed features (and known issues).
